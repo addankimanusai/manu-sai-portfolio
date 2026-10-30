@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b101e" />
+      <stop offset="100%" stop-color="#14192d" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#bgGrad2)" />
+
+  <!-- Grid overlay -->
+  <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1d2642" stroke-width="0.8" opacity="0.4" />
+  </pattern>
+  <rect width="800" height="480" fill="url(#grid2)" />
+
+  <!-- Window Container -->
+  <g transform="translate(40, 35)">
+    <!-- Container -->
+    <rect width="720" height="410" rx="14" fill="#0f1526" stroke="#22304f" stroke-width="1.5" />
+    
+    <!-- Title bar -->
+    <rect width="720" height="44" rx="14" fill="#141c33" />
+    <rect y="30" width="720" height="14" fill="#141c33" />
+    <line x1="0" y1="44" x2="720" y2="44" stroke="#1e2c4f" stroke-width="1" />
+    
+    <!-- Window controls -->
+    <circle cx="28" cy="22" r="6" fill="#EF4444" opacity="0.8" />
+    <circle cx="48" cy="22" r="6" fill="#F59E0B" opacity="0.8" />
+    <circle cx="68" cy="22" r="6" fill="#10B981" opacity="0.8" />
+    <text x="360" y="27" font-family="'Space Grotesk', system-ui, sans-serif" font-size="13" font-weight="600" fill="#93C5FD" text-anchor="middle">Smart Attendance Portal — Multi-Role Academic Dashboard</text>
+
+    <!-- Sidebar and Main Panel Layout -->
+    <!-- Left Mini-Sidebar -->
+    <g transform="translate(18, 58)">
+      <rect width="130" height="335" rx="8" fill="#131b30" stroke="#1e2a47" stroke-width="1" />
+      <text x="14" y="24" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#60A5FA">ROLE SELECTOR</text>
+      
+      <!-- Role items -->
+      <rect x="8" y="38" width="114" height="28" rx="6" fill="#1E3A8A" />
+      <text x="18" y="56" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#93C5FD">● Administrator</text>
+
+      <rect x="8" y="74" width="114" height="28" rx="6" fill="#18223d" />
+      <text x="18" y="92" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">Faculty Portal</text>
+
+      <rect x="8" y="110" width="114" height="28" rx="6" fill="#18223d" />
+      <text x="18" y="128" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">Student View</text>
+
+      <line x1="8" y1="155" x2="122" y2="155" stroke="#22304f" stroke-width="1" />
+      
+      <text x="14" y="180" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#64748B">DATABASE</text>
+      <text x="14" y="202" font-family="'Inter', sans-serif" font-size="11" fill="#34D399">MongoDB 7.0</text>
+      <text x="14" y="222" font-family="'Inter', sans-serif" font-size="11" fill="#A1A1AA">Express / Node</text>
+    </g>
+
+    <!-- Right Content Area -->
+    <g transform="translate(162, 58)">
+      <!-- Top Metrics Row -->
+      <g>
+        <!-- Metric 1 -->
+        <rect x="0" y="0" width="168" height="66" rx="8" fill="#141c33" stroke="#202c4b" stroke-width="1" />
+        <text x="14" y="22" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#94A3B8">TOTAL REGISTERED</text>
+        <text x="14" y="50" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700" fill="#F8FAFC">1,248 <tspan font-size="11" fill="#10B981">+4.2%</tspan></text>
+
+        <!-- Metric 2 -->
+        <rect x="182" y="0" width="168" height="66" rx="8" fill="#141c33" stroke="#202c4b" stroke-width="1" />
+        <text x="196" y="22" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#94A3B8">AVG ATTENDANCE</text>
+        <text x="196" y="50" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700" fill="#60A5FA">89.6%</text>
+
+        <!-- Metric 3 -->
+        <rect x="364" y="0" width="176" height="66" rx="8" fill="#141c33" stroke="#202c4b" stroke-width="1" />
+        <text x="378" y="22" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#94A3B8">CLASSES MARKED</text>
+        <text x="378" y="50" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700" fill="#A78BFA">34 / 36 Today</text>
+      </g>
+
+      <!-- Table / Chart view -->
+      <g transform="translate(0, 80)">
+        <rect width="540" height="255" rx="8" fill="#12182b" stroke="#1f2a47" stroke-width="1" />
+        <text x="16" y="25" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600" fill="#F8FAFC">Subject-Wise Attendance Analytics</text>
+        
+        <!-- Bar Chart Visual -->
+        <g transform="translate(20, 50)">
+          <!-- Subject 1 -->
+          <text x="0" y="20" font-family="'Inter', sans-serif" font-size="11" fill="#CBD5E1">Data Structures &amp; Algorithms</text>
+          <rect x="210" y="8" width="240" height="16" rx="4" fill="#1e2a47" />
+          <rect x="210" y="8" width="220" height="16" rx="4" fill="#3B82F6" />
+          <text x="460" y="21" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600" fill="#93C5FD">91.6%</text>
+
+          <!-- Subject 2 -->
+          <text x="0" y="56" font-family="'Inter', sans-serif" font-size="11" fill="#CBD5E1">Database Management Systems</text>
+          <rect x="210" y="44" width="240" height="16" rx="4" fill="#1e2a47" />
+          <rect x="210" y="44" width="206" height="16" rx="4" fill="#8B5CF6" />
+          <text x="460" y="57" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600" fill="#C4B5FD">86.0%</text>
+
+          <!-- Subject 3 -->
+          <text x="0" y="92" font-family="'Inter', sans-serif" font-size="11" fill="#CBD5E1">Computer Networks &amp; Security</text>
+          <rect x="210" y="80" width="240" height="16" rx="4" fill="#1e2a47" />
+          <rect x="210" y="80" width="225" height="16" rx="4" fill="#10B981" />
+          <text x="460" y="93" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600" fill="#6EE7B7">94.2%</text>
+
+          <!-- Subject 4 -->
+          <text x="0" y="128" font-family="'Inter', sans-serif" font-size="11" fill="#CBD5E1">Web Technologies &amp; React</text>
+          <rect x="210" y="116" width="240" height="16" rx="4" fill="#1e2a47" />
+          <rect x="210" y="116" width="232" height="16" rx="4" fill="#06B6D4" />
+          <text x="460" y="129" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600" fill="#67E8F9">96.5%</text>
+
+          <!-- Action bar bottom -->
+          <line x1="0" y1="155" x2="500" y2="155" stroke="#1e2a47" stroke-width="1" />
+          <rect x="0" y="168" width="160" height="28" rx="6" fill="#2563EB" />
+          <text x="80" y="186" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Generate Report</text>
+          
+          <rect x="175" y="168" width="130" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+          <text x="240" y="186" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#CBD5E1" text-anchor="middle">Export CSV</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

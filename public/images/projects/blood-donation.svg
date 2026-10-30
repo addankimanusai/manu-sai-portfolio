@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140a12" />
+      <stop offset="100%" stop-color="#24111d" />
+    </linearGradient>
+    <linearGradient id="crimsonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#991B1B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#bgGrad3)" />
+
+  <!-- Grid overlay -->
+  <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2b1723" stroke-width="0.8" opacity="0.5" />
+  </pattern>
+  <rect width="800" height="480" fill="url(#grid3)" />
+
+  <!-- Window Container -->
+  <g transform="translate(40, 35)">
+    <!-- Window Border & Shadow -->
+    <rect width="720" height="410" rx="14" fill="#170c15" stroke="#381b29" stroke-width="1.5" />
+    
+    <!-- Title bar -->
+    <rect width="720" height="44" rx="14" fill="#1e101c" />
+    <rect y="30" width="720" height="14" fill="#1e101c" />
+    <line x1="0" y1="44" x2="720" y2="44" stroke="#2d1726" stroke-width="1" />
+    
+    <!-- Controls -->
+    <circle cx="28" cy="22" r="6" fill="#EF4444" opacity="0.8" />
+    <circle cx="48" cy="22" r="6" fill="#F59E0B" opacity="0.8" />
+    <circle cx="68" cy="22" r="6" fill="#10B981" opacity="0.8" />
+    <text x="360" y="27" font-family="'Space Grotesk', system-ui, sans-serif" font-size="13" font-weight="600" fill="#FCA5A5" text-anchor="middle">BloodConnect — Lifesaving Donor &amp; Emergency Blood Portal</text>
+
+    <!-- Top Emergency Banner -->
+    <g transform="translate(30, 60)">
+      <rect width="660" height="46" rx="8" fill="#450a0a" stroke="#7f1d1d" stroke-width="1" />
+      <circle cx="24" cy="23" r="8" fill="#EF4444" />
+      <text x="42" y="27" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#FEE2E2">CRITICAL NEED: O-Negative &amp; B-Positive donors requested in Tirupati Regional Blood Bank</text>
+    </g>
+
+    <!-- Search and Filter Bar -->
+    <g transform="translate(30, 120)">
+      <rect width="660" height="52" rx="8" fill="#20111d" stroke="#3b1d30" stroke-width="1" />
+      
+      <!-- Blood Group Dropdown mockup -->
+      <rect x="14" y="10" width="130" height="32" rx="6" fill="#2a1626" stroke="#48243b" />
+      <text x="26" y="30" font-family="'Inter', sans-serif" font-size="11" fill="#F8FAFC">Type: O+ (All)</text>
+
+      <!-- City selector -->
+      <rect x="156" y="10" width="170" height="32" rx="6" fill="#2a1626" stroke="#48243b" />
+      <text x="168" y="30" font-family="'Inter', sans-serif" font-size="11" fill="#F8FAFC">Location: Andhra Pradesh</text>
+
+      <!-- Search button -->
+      <rect x="340" y="10" width="130" height="32" rx="6" fill="url(#crimsonGrad)" />
+      <text x="405" y="30" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Search Donors</text>
+
+      <!-- Register button -->
+      <rect x="500" y="10" width="146" height="32" rx="6" fill="#231728" stroke="#8B5CF6" stroke-width="1" />
+      <text x="573" y="30" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#C4B5FD" text-anchor="middle">+ Register as Donor</text>
+    </g>
+
+    <!-- Donor Cards Grid -->
+    <g transform="translate(30, 186)">
+      <!-- Donor 1 -->
+      <g>
+        <rect width="206" height="195" rx="10" fill="#1e101c" stroke="#361a2c" stroke-width="1" />
+        <circle cx="103" cy="45" r="26" fill="#2a1626" stroke="#EF4444" stroke-width="2" />
+        <text x="103" y="52" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700" fill="#EF4444" text-anchor="middle">O+</text>
+        
+        <text x="103" y="94" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600" fill="#F8FAFC" text-anchor="middle">Verified Donor #104</text>
+        <text x="103" y="112" font-family="'Inter', sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">Tirupati • Available Now</text>
+        <text x="103" y="130" font-family="'Inter', sans-serif" font-size="10" fill="#10B981" text-anchor="middle">● Last donated 4 mos ago</text>
+
+        <rect x="25" y="148" width="156" height="28" rx="6" fill="#DC2626" />
+        <text x="103" y="166" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Request Blood</text>
+      </g>
+
+      <!-- Donor 2 -->
+      <g transform="translate(226, 0)">
+        <rect width="206" height="195" rx="10" fill="#1e101c" stroke="#361a2c" stroke-width="1" />
+        <circle cx="103" cy="45" r="26" fill="#2a1626" stroke="#3B82F6" stroke-width="2" />
+        <text x="103" y="52" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700" fill="#60A5FA" text-anchor="middle">A+</text>
+        
+        <text x="103" y="94" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600" fill="#F8FAFC" text-anchor="middle">Verified Donor #088</text>
+        <text x="103" y="112" font-family="'Inter', sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">Chittoor • Available</text>
+        <text x="103" y="130" font-family="'Inter', sans-serif" font-size="10" fill="#10B981" text-anchor="middle">● Eligible to Donate</text>
+
+        <rect x="25" y="148" width="156" height="28" rx="6" fill="#2563EB" />
+        <text x="103" y="166" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Contact Donor</text>
+      </g>
+
+      <!-- Donor 3 -->
+      <g transform="translate(452, 0)">
+        <rect width="206" height="195" rx="10" fill="#1e101c" stroke="#361a2c" stroke-width="1" />
+        <circle cx="103" cy="45" r="26" fill="#2a1626" stroke="#8B5CF6" stroke-width="2" />
+        <text x="103" y="52" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700" fill="#C4B5FD" text-anchor="middle">B+</text>
+        
+        <text x="103" y="94" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="600" fill="#F8FAFC" text-anchor="middle">Verified Donor #212</text>
+        <text x="103" y="112" font-family="'Inter', sans-serif" font-size="11" fill="#A1A1AA" text-anchor="middle">Nellore • Standby</text>
+        <text x="103" y="130" font-family="'Inter', sans-serif" font-size="10" fill="#10B981" text-anchor="middle">● 3 Lives Saved</text>
+
+        <rect x="25" y="148" width="156" height="28" rx="6" fill="#7C3AED" />
+        <text x="103" y="166" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">Emergency Request</text>
+      </g>
+    </g>
+  </g>
+</svg>

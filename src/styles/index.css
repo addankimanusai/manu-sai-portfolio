@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  
+  body {
+    @apply bg-background-main text-text-main font-sans antialiased selection:bg-accent-purple/30 selection:text-white;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar for modern browsers */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #09090F;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #29293A;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3b3b52;
+  }
+}
+
+@layer utilities {
+  /* Subtle glassmorphism */
+  .glass-card {
+    background: rgba(22, 22, 36, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(41, 41, 58, 0.8);
+  }
+  
+  .glass-card-hover {
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .glass-card-hover:hover {
+    background: rgba(28, 28, 48, 0.85);
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.15);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-purple via-purple-400 to-accent-blue;
+  }
+}
+
+/* Accessibility: respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
