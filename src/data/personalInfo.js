@@ -28,7 +28,7 @@ export const personalInfo = {
    * 2. View Resume: Set RESUME_DRIVE_URL to your Google Drive sharing link (e.g., "https://drive.google.com/file/d/.../view")
    *    Leave empty ("") until configured; UI handles empty state with a professional notification.
    */
-  RESUME_DRIVE_URL: "", // TODO: Paste your Google Drive shareable link here
+  RESUME_DRIVE_URL: "https://drive.google.com/file/d/1OliRrR-e3Tuz1D9UsMIiqzP_aQYDyfYO/view?usp=sharing",
   resumeDownloadPath: "/resume.pdf",
   resumeDownloadFilename: "Addanki_Manu_Sai_Resume.pdf",
 

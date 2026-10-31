@@ -1,8 +1,6 @@
 /**
  * Centralized Projects Configuration
- * Add or update your projects here.
- * When github or liveDemo is an empty string (""), the UI displays a clean
- * "Coming Soon" / "Not Available Yet" badge instead of a broken link or navigating to "#".
+ * Fully updated with Addanki Manu Sai's authentic GitHub repositories and live deployments.
  */
 
 export const projects = [
@@ -13,8 +11,8 @@ export const projects = [
     description: "Developed a responsive typing practice application featuring interactive typing tests, real-time Words Per Minute (WPM) and accuracy calculations, and virtual keyboard guidance to help users improve typing speed and precision. Built reusable React components and implemented dynamic UI updates for an interactive practice experience.",
     technologies: ["React.js", "JavaScript", "HTML5", "CSS3", "Vercel"],
     image: "/images/projects/typemaster.svg",
-    github: "", // Add your GitHub repository URL here when ready
-    liveDemo: "", // Add your Live Demo deployment URL here when ready
+    github: "https://github.com/addankimanusai/type-master",
+    liveDemo: "https://type-master-chi.vercel.app/",
     featured: true,
     highlights: [
       "Real-time Words Per Minute (WPM) calculation engine",
@@ -29,8 +27,8 @@ export const projects = [
     description: "Engineered a full-stack attendance management system with role-specific dashboards for administrators, faculty, and students. Implemented attendance marking, database-backed record management, and subject-wise attendance reports to streamline academic tracking and reduce manual recordkeeping.",
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js"],
     image: "/images/projects/attendance-system.svg",
-    github: "", // Add your GitHub repository URL here when ready
-    liveDemo: "", // Add your Live Demo deployment URL here when ready
+    github: "https://github.com/addankimanusai/smartcart",
+    liveDemo: "https://smart-attendance-nu-navy.vercel.app/login",
     featured: true,
     highlights: [
       "Role-based access control for Admins, Faculty, and Students",
@@ -45,8 +43,8 @@ export const projects = [
     description: "Built a full-stack web application connecting blood donors with individuals requiring blood through donor registration, donor search, and emergency blood request management. Integrated PHP and MySQL for server-side processing and data persistence, with a responsive interface and input validation.",
     technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
     image: "/images/projects/blood-donation.svg",
-    github: "", // Add your GitHub repository URL here when ready
-    liveDemo: "", // Add your Live Demo deployment URL here when ready
+    github: "https://github.com/addankimanusai/Blood-Donation-website",
+    liveDemo: "https://blood-donation-manusai.infinityfree.me/",
     featured: true,
     highlights: [
       "Emergency blood request broadcast & notification system",
